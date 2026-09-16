@@ -26,8 +26,8 @@ classifiers=[
 dependencies = [
     "boto3 == 1.39.3",
     "botocore == 1.39.3",
-    "requests == 2.32.4",
-    "jsonschema == 4.3.2",
+    "requests ==2.34.2",
+    "jsonschema ==4.26.0",
     "urllib3 >= 2.6.0"
 ]
 
@@ -35,13 +35,13 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest ~= 8.4.1",
-    "pytest-cov ~= 6.2.0",
+    "pytest-cov ~=6.3.0",
     "pytest-subtests ~= 0.14.2",
-    "black ~= 25.1.0",
-    "isort ~= 6.0.1",
-    "pre-commit ~= 4.2.0",
-    "mypy ~= 1.16.1",
+    "black ~=25.12.0",
+    "isort ~=6.1.0",
+    "pre-commit ~=4.6.2",
+    "mypy ~=1.20.2",
     "boto3-stubs[support,stepfunctions, ec2, organizations, servicecatalog, sqs, lambda, sns, sts, cloudtrail, ssm, iam, dynamodb, inspector2, s3] ~= 1.39.0",
     "aws_lambda_powertools ~= 3.16.0",
-    "types-requests == 2.32.4.*",  # should match the installed requests version
+    "types-requests ==2.33.0.*",  # should match the installed requests version
 ]
